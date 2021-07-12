@@ -24,7 +24,9 @@ function submit(m, n) {
   }
 }
 function colorcode(m, n, color) {
-  console.log(m, n);
+  // console.log(m, n);
+  m--;
+  n--;
   document.getElementById(m.toString() + n.toString()).style.backgroundColor =
     color;
 }
@@ -54,6 +56,6 @@ function insert(n) {
   elep.textContent = "div " + n;
   element.appendChild(elep);
   var divs = document.getElementById("insert" + (n - 1));
-  alert(divs);
+  // alert(divs);
   divs.insertAdjacentHTML("afterend", element.outerHTML);
 }
