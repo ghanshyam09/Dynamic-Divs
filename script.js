@@ -57,6 +57,6 @@ function insert(n) {
   elep.textContent = "div " + n;
   element.appendChild(elep);
   var divs = document.getElementById("insert" + (n - 1));
-  // alert(divs);
-  divs.insertAdjacentHTML("afterend", element.outerHTML);
+  var nxtdiv = document.getElementById("insert" + n);
+  if (nxtdiv === null) divs.insertAdjacentHTML("afterend", element.outerHTML);
 }
