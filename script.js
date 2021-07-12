@@ -27,6 +27,7 @@ function colorcode(m, n, color) {
   // console.log(m, n);
   m--;
   n--;
+  color = color.toString().toLowerCase();
   document.getElementById(m.toString() + n.toString()).style.backgroundColor =
     color;
 }
