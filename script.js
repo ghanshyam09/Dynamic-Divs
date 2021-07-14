@@ -31,7 +31,7 @@ function colorcode(m, n, color) {
   document.getElementById(m.toString() + n.toString()).style.backgroundColor =
     color;
 }
-function insert(n) {
+function insert() {
   var divs = document.getElementsByClassName("insert");
   colors = [
     "#000000",
@@ -43,20 +43,20 @@ function insert(n) {
     "#FF00FF",
     "#C0C0C0",
   ];
-  n++;
+  // n++;
   // alert(n);
   document.getElementById("choice1").style.display = "flex";
   document.getElementById("table").style.display = "none";
 
   var element = document.createElement("div");
-  element.id = "insert" + n;
+  element.id = "insert2";
   element.style.height = "230px";
   element.style.width = "200px";
   element.style.background = colors[Math.floor(Math.random() * 8)];
   var elep = document.createElement("p");
-  elep.textContent = "div " + n;
+  elep.textContent = "div 2";
   element.appendChild(elep);
-  var divs = document.getElementById("insert" + (n - 1));
-  var nxtdiv = document.getElementById("insert" + n);
-  if (nxtdiv === null) divs.insertAdjacentHTML("afterend", element.outerHTML);
+  var divs = document.getElementById("insert1");
+  // var nxtdiv = document.getElementById("insert1");
+  divs.insertAdjacentHTML("afterend", element.outerHTML);
 }

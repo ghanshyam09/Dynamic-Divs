@@ -1,8 +1,8 @@
-#choice {
+.select {
   display: flex;
   justify-content: space-around;
 }
-#div1 {
+.first {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@ button {
   background-color: green;
   color: white;
 }
-#div2 {
+.second {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,19 +41,17 @@ p {
   display: flex;
   flex-direction: column;
 }
-#insert1 {
+.one {
   background-color: aqua;
   width: 200px;
   height: 230px;
 }
-#insert3 {
+.three {
   background-color: lightcoral;
   width: 200px;
   height: 230px;
 }
-hr {
-}
-#div3 {
+.third {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,11 +59,4 @@ hr {
   padding: 1rem;
   border-radius: 1em;
   background-color: lightgrey;
-}
-#data {
-  display: block;
-}
-#code {
-  width: max-content;
-  background-color: aqua;
 }
